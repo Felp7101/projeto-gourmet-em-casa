@@ -1,0 +1,101 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  height: 100vh;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.container-bg {
+  position: fixed;
+  height: 100vh;
+  width: 100vw;
+  z-index: -2;
+
+}
+#credits-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.recipe-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+
+.bg {
+  width: 100vw;
+  margin-bottom: 0;
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  border: 5px solid #ffff;
+  right: 0;
+}
+
+.recipe-portrait {
+  border-radius: 29px;
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.recipe-img {
+  height: 390px;
+  width: 450px;
+  object-fit: cover;
+  border-style: solid;
+  border-radius: 20px;
+  border: 1px solid #ffff;
+  transition: transform 0.7s ease;
+  border: 5px solid #ffff;
+}
+
+.recipe-img:hover {
+  transform: scale(1.025);
+}
+
+.recipe-title-box {
+  background: linear-gradient(to right, #201c1c, #2e2828, #201c1c);
+  background-size: 200% 100%;
+  background-position: center;
+  height: 100px;
+  width: 80%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  border: 5px solid #ffff;
+  position: relative;
+  bottom: 90px;
+}
+
+.recipe-title {
+  font-family: 'Abril Fatface', sans-serif;
+  text-align: center;
+  font-size: 30px;
+  color: #ffff;
+  text-transform: uppercase;
+  font-weight: 300;
+}
+
+.recipe-source-box {
+  position: absolute;
+  left: 50px;
+  margin-top: 20%;
+  font-family: 'Bree Serif', sans-serif;
+}
+
+.source {
+  color: #fff;
+  font-size: 20px;
+}
