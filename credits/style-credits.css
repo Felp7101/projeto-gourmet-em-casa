@@ -19,12 +19,12 @@
   filter: grayscale(1);
 }
 .bg-credits-container {
-  height: 300px; /* Altura fixa do contêiner */
-  width: 400px; /* Largura fixa do contêiner */
+  height: 300px; 
+  width: 400px; 
   margin-right: 20px;
   border-radius: 20px;
-  overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas */
-  position: relative; /* Necessário para o posicionamento correto */
+  overflow: hidden;
+  position: relative; 
   border: 5px solid #2e2828;
 }
 .title-credits {
@@ -54,8 +54,8 @@
 }
 
 .credits-element {
-  width: 80%; /* Ajuste conforme necessário */
-  margin: 0px auto; /* Adiciona margem superior e inferior */
+  width: 80%; 
+  margin: 0px auto; 
   display: flex;
   justify-content: center;
 }
@@ -142,19 +142,18 @@
   font-size: 20px;
 }
 
-/* CSS para os backgrounds */
 
 section {
   margin-bottom: 10%;
 }
 
 .bg-credits-container {
-  height: 300px; /* Altura fixa do contêiner */
-  width: 400px; /* Largura fixa do contêiner */
+  height: 300px; 
+  width: 400px;
   margin-right: 20px;
   border-radius: 20px;
-  overflow: hidden; /* Garante que o conteúdo não ultrapasse as bordas */
-  position: relative; /* Necessário para o posicionamento correto */
+  overflow: hidden; 
+  position: relative; 
   border: 5px solid #2e2828;
 }
 
@@ -163,15 +162,15 @@ section {
   width: 100%;
   background-size: cover;
   background-position: center;
-  /* border-radius: 20px; */
+
   transition: transform 0.7s ease;
   gap: 20px;
-  /* margin-top: 20px; */
+
 }
 
 
 .bg-credits:hover {
-  transform: scale(1.1); /* Expande a imagem dentro do contêiner */
+  transform: scale(1.1); 
 }
 
 .backgrounds {
@@ -183,7 +182,7 @@ section {
   border-radius: 20px;
 }
 
-/* Adicione essa regra CSS */
+
 .text-box {
   display: flex;
   flex-direction: column;
@@ -199,7 +198,7 @@ section {
   color: #fff;
   text-transform: uppercase;
   font-weight: 300;
-  z-index: 1; /* Garanta que o texto esteja sobre a imagem */
+  z-index: 1; 
 }
 
 .text-box h3 {
@@ -209,10 +208,10 @@ section {
 
 .bg-section {
   width: 100vw;
-  height: 70vh; /* Certifique-se de que a imagem ocupe a tela toda */
+  height: 70vh; 
   position: absolute;
   left: 0;
-  z-index: -1; /* Para que a imagem fique atrás do texto */
+  z-index: -1; 
   border: 5px solid #fff;
 }
 
