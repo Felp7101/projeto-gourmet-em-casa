@@ -293,8 +293,14 @@ footer a {
   width: 40px;
 }
 
+.footer-social img:hover {
+  filter: brightness(0.7);
+  transition: 0.2s;
+}
+
 .footer-credits {
   margin-top: 20px;
+  font-family: "Lexend", sans-serif;
 }
 
 .footer-credits a {
