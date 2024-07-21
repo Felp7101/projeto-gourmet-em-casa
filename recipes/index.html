@@ -1,208 +1,104 @@
 <!DOCTYPE html>
-<html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lexend:wght@100..900&display=swap"
-      rel="stylesheet"
-    />
-    <title>Gourmet em Casa</title>
-    <link rel="stylesheet" href="style-recipe.css" />
-  </head>
-  <body class="container">
-    <section>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Detalhes da Receita</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+    rel="stylesheet"
+  />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lexend:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
+  <link rel="stylesheet" href="style-recipe.css">
+</head>
+<body>
+  <section class="recipe-header">
+    <img id="brown-element" src="../assets/brown-element-ul.png" alt="fundo" />
+    <div class="overlay-content">
       <div class="recipe-item first-item">
-        <img class="el-li" src="../assets/brown-element-ul.png" alt="fundo" />
         <div class="food-portrait">
-          <img
-            class="food-1"
-            src="../assets/bolo-floresta-negra.jpg"
-            alt="imagem de bolo floresta negra"
-          />
+          <img id="recipe-image" alt="Imagem da Receita">
         </div>
         <div class="text-content">
-          <h3 class="title-recipe">
-            aprenda a fazer <br />
-            bolo floresta negra
-          </h3>
-          <p>
-            Se você busca uma sobremesa que combine beleza, sabor e tradição,
-            <br />
-            o bolo Floresta Negra é a escolha perfeita! <br />
-            Capaz de surpreender qualquer paladar como sempre.
-          </p>
+          <h1 id="recipe-title"></h1>
+          <p id="recipe-description"></p>
         </div>
       </div>
-      <div class="recipe-info">
-        <div class="info-icons">
-          <div class="info-item">
-            <img
-              src="../assets/chef-hat-icon.png"
-              alt="icone chapeu de chef de cozinha"
-            />
-            <div class="info-text">
-              <p class="info-sign">Dificuldade:</p>
-              <p id="dif">Médio</p>
-            </div>
-          </div>
-          <div class="info-item">
-            <img src="../assets/test.png" alt="icone relógio" />
-            <div class="info-text">
-              <p class="info-sign">Tempo de Preparo:</p>
-              <p id="prep-time">90 min</p>
-            </div>
-          </div>
-          <div class="info-item">
-            <img src="../assets/meat-icon.png" alt="icone carne" />
-            <div class="info-text">
-              <p class="info-sign">Rendimento:</p>
-              <p id="income-sign">25 porções</p>
-            </div>
-          </div>
+    </div>
+    <div class="recipe-info">
+      <div class="info-icons">
+        <div class="info-item">
+          <img src="../assets/chef-hat-icon.png" alt="icone chapeu de chef de cozinha" />
+          <p id="difficulty-sign">Dificuldade:</p>
+          <p id="recipe-difficulty"></p>
+        </div>
+        <div class="info-item">
+          <img src="../assets/test.png" alt="icone relógio" />
+          <p id="prep-time-sign">Tempo de preparo:</p>
+          <p id="recipe-prep-time"></p>
+        </div>
+        <div class="info-item">
+          <img src="../assets/meat-icon.png" alt="icone carne" />
+          <p id="servings-sign">Porções:</p>
+          <p id="recipe-servings"></p>
         </div>
       </div>
-      <div class="wallpaper-box">
-        <img
-          class="wp"
-          src="../assets/wood-texture-1.jpg"
-          alt="papel-de-parede-de-textura-de-madeira-desenhada"
-        />
+    </div>
+    <div class="wallpaper-box">
+      <img class="wp" src="../assets/wood-texture-1.jpg" alt="papel-de-parede-de-textura-de-madeira-desenhada" />
+    </div>
+  </section>
+
+  <div class="recipe-container">
+    <div id="recipe-sign-box">
+      <h3 id="recipe-sign">Receita</h3>
+    </div>
+    <div id="background-recipe-box">
+      <img class="brown-element-recipe" src="../assets/brown-element-recipe.png" alt="elemento marrom de fundo das receitas">
+    </div>
+    <div id="recipe-details-box">
+    <h2>Ingredientes</h2>
+    <pre id="recipe-ingredients"></pre>
+    <h2>Modo de Preparo</h2>
+    <pre id="recipe-instructions"></pre>
+  </div>
+</div>
+  <footer>
+    <div class="background-footer">
+      <img src="../assets/brown-element-footer.png" class="bg-footer" alt="background do footer" />
+    </div>
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img class="logo" src="../assets/logo.png" alt="logo" />
       </div>
-    </section>
-    <main>
-      <div id="recipe-sign-box">
-        <h2 class="recipe-sign">receita</h2>
+      <div class="footer-social">
+        <a href="https://www.facebook.com/" target="_blank">
+          <img src="../assets/facebook-icon.png" alt="icone facebook" />
+        </a>
+        <a href="https://www.instagram.com/" target="_blank">
+          <img src="../assets/instagram-icon.png" alt="icone instagram" />
+        </a>
+        <a href="https://x.com/home" target="_blank">
+          <img src="../assets/x-icon.png" alt="x icone" />
+        </a>
+        <a href="https://www.youtube.com/" target="_blank">
+          <img src="../assets/youtube-icon.png" alt="youtube icone" />
+        </a>
       </div>
-      <div class="recipe-box">
-        <div class="recipe-bg-box">
-          <img
-            class="recipe-bg"
-            src="../assets/brown-element-recipe.png"
-            alt="plano-de-fundo-da-receita"
-          />
-        </div>
-        <div class="text-content">
-          <h4 id="ingredients-sign">ingredientes:</h4>
-          <ul>
-            <li>6 ovos</li>
-            <li>2 xícaras (chá) de açúcar</li>
-            <li>1 xícara (chá) de chocolate em pó</li>
-            <li>1 xícara (chá) de óleo</li>
-            <li>3 xícaras (chá) de farinha de trigo</li>
-            <li>1 xícara (chá) de água quente</li>
-            <li>1 colher (sopa) cheia de fermento recheio</li>
-            <li>1 litro de chantilly</li>
-            <li>400 g de cereja em calda</li>
-            <li>Raspas de chocolate para decorar (a gosto)</li>
-          </ul>
-          <h4 id="prep-method-sign">modo de preparo:</h4>
-          <ol>
-            <p>Massa:</p>
-            <li>
-              O primeiro passo é bater as claras até o ponto de neve. Para isso,
-              é necessário uma batedeira.
-            </li>
-            <li>
-              Em seguida, adicione as gemas às claras em neve, uma a uma e bata
-              até incorporar.
-            </li>
-            <li>
-              Adicione o açúcar, aos poucos, e faça a mesma coisa. A massa deve
-              ficar homogênea e esbranquiçada.
-            </li>
-            <li>
-              Com a batedeira ainda ligada, acrescente o chocolate em pó, o óleo
-              e a farinha, um de cada vez, batendo até que tenha sido
-              completamente incorporado. Ao final, adicione a água e misture
-              bem.
-            </li>
-            <li>
-              Por último, adicione o fermento e bata apenas o suficiente para
-              ele se misturar à massa.
-            </li>
-            <li>Despeje a massa em uma forma untada e enfarinhada.</li>
-            <li>
-              Leve para assar por 40 minutos a 180° C. Passado esse tempo, faça
-              o teste do palito para garantir que a massa está cozida.
-            </li>
-            <li>Retire do forno e espere esfriar para desenformar.</li>
-            <p>Cobertura e Montagem:</p>
-            <li>Enquanto o bolo esfria, é hora de bater o chantilly.</li>
-            <li>
-              Se você estiver usando creme de leite bate chantilly ou creme de
-              leite fresco, não esqueça de usá-lo quando estiver bem gelado!
-              Deixe na batedeira até formar picos firmes.
-            </li>
-            <li>
-              Divida o chantilly em duas partes, uma delas com uma quantidade um
-              pouquinho maior.
-            </li>
-            <li>
-              Na parte maior, adicione as cerejas picadas, reservando cinco para
-              a decoração. Misture bem.
-            </li>
-            <li>Reserve as duas partes na geladeira enquanto o bolo esfria.</li>
-            <li>Quando tudo já estiver frio, divida o bolo em três camadas.</li>
-            <li>
-              Coloque a primeira em cima de um prato de bolo e molhe-a com a
-              calda das cerejas.
-            </li>
-            <li>Adicione metade do recheio e espalhe delicadamente.</li>
-            <li>
-              Repita o processo com a segunda camada, finalizando com a terceira
-              camada de bolo.
-            </li>
-            <li>
-              Espalhe todo o chantilly da cobertura pelas laterais e por cima.
-            </li>
-            <li>
-              Finalize com as cerejas reservadas e com raspas de chocolate a
-              gosto.
-            </li>
-          </ol>
-        </div>
+      <div class="footer-credits">
+        <p>
+          Clique abaixo para ver as fontes da imagens e receitas usadas no site
+        </p>
+        <a href="../credits/credits.html">Clique Aqui</a>
       </div>
-    </main>
-    <footer>
-      <div class="background-footer">
-        <img
-          src="../assets/brown-element-footer.png"
-          class="bg-footer"
-          alt="background do footer"
-        />
-      </div>
-      <div class="footer-content">
-        <div class="footer-logo">
-          <img class="logo" src="../assets/logo.png" alt="logo" />
-        </div>
-        <div class="footer-social">
-          <a href="https://www.facebook.com/" target="_blank">
-            <img src="../assets/facebook-icon.png" alt="icone facebook" />
-          </a>
-          <a href="https://www.instagram.com/" target="_blank">
-            <img src="../assets/instagram-icon.png" alt="icone instagram" />
-          </a>
-          <a href="https://x.com/home" target="_blank">
-            <img src="../assets/x-icon.png" alt="x icone" />
-          </a>
-          <a href="https://www.youtube.com/" target="_blank">
-            <img src="../assets/youtube-icon.png" alt="youtube icone" />
-          </a>
-        </div>
-        <div class="footer-credits">
-          <p>
-            Clique abaixo para ver as fontes da imagens e videos usados no site
-          </p>
-          <a href="../credits/credits.html">Clique Aqui</a>
-        </div>
-      </div>
-    </footer>
-  </body>
+    </div>
+  </footer>
+  <script src="./recipes.js"></script>
+  <script src="./script-recipes.js"></script>
+</body>
 </html>

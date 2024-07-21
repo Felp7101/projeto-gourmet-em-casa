@@ -17,16 +17,33 @@ body, html {
   position: relative;
 }
 
-.el-li {
+.recipe-header {
+  position: relative;
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+}
+
+#brown-element {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100vw;
+  width: 100%;
+  height: auto;
   z-index: -1;
 }
 
+.overlay-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
 .wallpaper-box {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   height: 100vh;
@@ -44,22 +61,22 @@ body, html {
 
 .food-portrait {
   border-radius: 29px;
-  height: 390px;
+  height: 380px;
   width: 400px;
   display: inline-block;
   margin-left: 10px;
-  border: 5px solid #fff;
+  border: 5px solid #ffff;
   overflow: hidden;
+  position: static;
 }
 
-.food-1 {
+#recipe-image {
   height: 100%;
   width: 100%;
   object-fit: cover;
   border-style: solid;
   border-radius: 20px;
-  border: 1px solid #fff;
-  transition: transform 0.7s ease;
+  border: 1px solid #ffff;
 }
 
 ul {
@@ -83,8 +100,8 @@ ul {
   text-transform: uppercase;
 }
 
-.title-recipe {
-  font-size: 40px;
+#recipe-title {
+  font-size: 31px;
   font-family: "Abril Fatface";
   font-weight: 300;
 }
@@ -100,7 +117,7 @@ ul {
   background-size: 200% 100%;
   background-position: center;
   height: 143px;
-  width: 85%;
+  width: 75%;
   border-radius: 40px;
   border: 5px solid #fff;
   display: flex;
@@ -110,7 +127,8 @@ ul {
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.25);
   margin: 0 auto;
   position: relative;
-  bottom: 55px;
+  bottom: 5pc;
+  z-index: 1;
 }
 
 .info-icons {
@@ -122,14 +140,16 @@ ul {
 
 .info-item {
   display: flex;
+  flex-direction: column;
   align-items: center;
-  margin: 0 20px;
+  margin: 0 100px;
   text-align: center;
+  position: relative;
 }
 
 .info-item img {
-  height: 140px;
-  margin-right: 10px;
+  height: 105px;
+  margin-bottom: -10px;
 }
 
 .info-text {
@@ -138,24 +158,34 @@ ul {
   align-items: center;
 }
 
-.info-text p {
-  position: relative;
-  right: 30px;
-  color: #fff;
-  margin: 5px 0;
+#recipe-prep-time, #recipe-servings, #recipe-difficulty {
   font-family: "Bree Serif", sans-serif;
   text-transform: uppercase;
   font-size: 20px;
+  color: #fff;
+  font-weight: 300;
+  text-align: center;
+  text-decoration: underline;
   white-space: nowrap;
 }
 
-.info-sign {
-  display: block;
-  margin-bottom: 5px;
+#prep-time-sign, #servings-sign, #difficulty-sign {
+  font-size: 20px;
+  font-family: "Bree Serif", sans-serif;
+  text-transform: uppercase;
+  color: #fff;
+  position: absolute;
+  white-space: nowrap;
 }
 
-#income-sign, #prep-time, #dif {
-  text-decoration: underline;
+.recipe-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  position: relative;
+  margin-bottom: 20px;
 }
 
 #recipe-sign-box {
@@ -171,68 +201,48 @@ ul {
   border: 5px solid #ffff;
   margin: 20px auto;
   position: relative;
-  top: 160px;
+  bottom: 60px;
   z-index: 1;
 }
 
-.recipe-sign {
-  font-size: 35px;
-  font-weight: 400;
-  font-family: "Abril Fatface", sans-serif;
+#recipe-sign {
+  font-size: 30px;
   text-transform: uppercase;
   color: #fff;
-}
-
-.recipe-box {
-  position: relative;
-  width: 100%;
-}
-
-.recipe-bg-box {
-  width: 100%;
-  overflow: hidden;
-  position: absolute;
-  top: 0;
-  left: 0;
-  bottom: 0;
-}
-
-.recipe-bg {
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
-}
-
-.recipe-box .text-content {
-  position: relative;
-  text-align: left;
-  color: #fff;
-  padding: 20px;
-  margin-top: 100px; 
-  z-index: 1;
-}
-
-#prep-method-sign, #ingredients-sign {
-  margin: 50px 15px;
-  font-family: "Abril Fatface", sans-serif;
-  text-transform: uppercase;
-  font-size: 35px;
-  text-decoration: underline;
   font-weight: 100;
+  font-family: "Abril Fatface";
+  text-align: center;  /* Centraliza o texto */
+}
+#recipe-details-box {
+  text-align: left;
+  position: relative;
+ 
+  line-height: 1.5;
+  color: #fff;
+ margin-left: 10px;
+  
 }
 
-ul li {
-  list-style: disc;
+#recipe-details-box h2 {
+  font-size: 30px;
+  font-family: "Abril Fatface";
+  font-weight: 100;
+  text-transform: uppercase;
+  text-decoration: underline;
+}
+#recipe-details-box pre {
+  font-size: 19px;
+  list-style: none;
+  margin-bottom: 20px;
+}
+pre {
+  white-space: pre-wrap;
+  font-family: inherit;
 }
 
-li {
-  margin-left: 20px;
-  font-size: 20px;
-  line-height: 1.75;
-}
-.recipe-box .text-content p {
-  margin: 20px 0;
-  font-size: 24px;
+.footer-bg img {
+  height: 35vh;
+  width: 100vw;
 }
 
 footer {
@@ -247,8 +257,6 @@ footer {
 }
 
 .background-footer {
-
- 
   width: 100%;
   height: 100%;
   z-index: -1;
@@ -257,11 +265,10 @@ footer {
 .bg-footer {
   width: 100%;
   height: 107%;
-  position: absolute;
   object-fit: cover;
+  position: absolute;
   top: 0;
   left: 0;
-  margin-top: 20px;
 }
 
 .footer-content {
@@ -297,14 +304,33 @@ footer a {
   filter: brightness(0.7);
   transition: 0.2s;
 }
-
 .footer-credits {
   margin-top: 20px;
-  font-family: "Lexend", sans-serif;
 }
 
 .footer-credits a {
   text-decoration: underline;
   margin-top: 20px;
   font-size: 19px;
+}
+
+#background-recipe-box {
+    width: 100vw;
+    overflow: hidden;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+  z-index: -1;
+}
+
+.brown-element-recipe {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
 }
