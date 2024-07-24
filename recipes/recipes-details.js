@@ -201,8 +201,7 @@ se desejar, decorado com folhas de manjericão.
   7: {
     title: "Risoto de bacalhau",
     image: "../assets/risoto-de-bacalhau.jpg",
-    description:
-   ` Uma receita com um sabor intenso, que
+    description: ` Uma receita com um sabor intenso, que
     definitivamente consegue surpeender
     todos que experimentam essa comida.`,
     difficulty: "Médio",
@@ -414,8 +413,7 @@ Para o risoto, aqueça uma panela com 3 colheres (sopa) da manteiga, em fogo alt
   14: {
     title: "Lasanha de beringela ao molho bolonhesa ",
     image: "../assets/lasanha-de-berinjela-bolonhesa.jpg",
-    description:
-      `Aprenda a fazer uma lasanha de beringela que
+    description: `Aprenda a fazer uma lasanha de beringela que
 transforma qualquer refeição.
 Clique abaixo para ver a receita!
 `,

@@ -1,104 +1,124 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Detalhes da Receita</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
-    rel="stylesheet"
-  />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lexend:wght@100..900&display=swap"
-    rel="stylesheet"
-  />
-  <link rel="stylesheet" href="style-recipe.css">
-</head>
-<body>
-  <section class="recipe-header">
-    <img id="brown-element" src="../assets/brown-element-ul.png" alt="fundo" />
-    <div class="overlay-content">
-      <div class="recipe-item first-item">
-        <div class="food-portrait">
-          <img id="recipe-image" alt="Imagem da Receita">
-        </div>
-        <div class="text-content">
-          <h1 id="recipe-title"></h1>
-          <p id="recipe-description"></p>
-        </div>
-      </div>
-    </div>
-    <div class="recipe-info">
-      <div class="info-icons">
-        <div class="info-item">
-          <img src="../assets/chef-hat-icon.png" alt="icone chapeu de chef de cozinha" />
-          <p id="difficulty-sign">Dificuldade:</p>
-          <p id="recipe-difficulty"></p>
-        </div>
-        <div class="info-item">
-          <img src="../assets/test.png" alt="icone relógio" />
-          <p id="prep-time-sign">Tempo de preparo:</p>
-          <p id="recipe-prep-time"></p>
-        </div>
-        <div class="info-item">
-          <img src="../assets/meat-icon.png" alt="icone carne" />
-          <p id="servings-sign">Porções:</p>
-          <p id="recipe-servings"></p>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Detalhes da Receita</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Lexend:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style-recipe.css" />
+  </head>
+  <body>
+    <section class="recipe-header">
+      <img
+        id="brown-element"
+        src="../assets/brown-element-ul.png"
+        alt="fundo"
+      />
+      <div class="overlay-content">
+        <div class="recipe-item first-item">
+          <div class="food-portrait">
+            <img id="recipe-image" alt="Imagem da Receita" />
+          </div>
+          <div class="text-content">
+            <h1 id="recipe-title"></h1>
+            <p id="recipe-description"></p>
+          </div>
         </div>
       </div>
-    </div>
-    <div class="wallpaper-box">
-      <img class="wp" src="../assets/wood-texture-1.jpg" alt="papel-de-parede-de-textura-de-madeira-desenhada" />
-    </div>
-  </section>
+      <div class="recipe-info">
+        <div class="info-icons">
+          <div class="info-item">
+            <img
+              src="../assets/chef-hat-icon.png"
+              alt="icone chapeu de chef de cozinha"
+            />
+            <p id="difficulty-sign">Dificuldade:</p>
+            <p id="recipe-difficulty"></p>
+          </div>
+          <div class="info-item">
+            <img src="../assets/test.png" alt="icone relógio" />
+            <p id="prep-time-sign">Tempo de preparo:</p>
+            <p id="recipe-prep-time"></p>
+          </div>
+          <div class="info-item">
+            <img src="../assets/meat-icon.png" alt="icone carne" />
+            <p id="servings-sign">Porções:</p>
+            <p id="recipe-servings"></p>
+          </div>
+        </div>
+      </div>
+      <div class="wallpaper-box">
+        <img
+          class="wp"
+          src="../assets/wood-texture-1.jpg"
+          alt="papel-de-parede-de-textura-de-madeira-desenhada"
+        />
+      </div>
+    </section>
 
-  <div class="recipe-container">
-    <div id="recipe-sign-box">
-      <h3 id="recipe-sign">Receita</h3>
-    </div>
-    <div id="background-recipe-box">
-      <img class="brown-element-recipe" src="../assets/brown-element-recipe.png" alt="elemento marrom de fundo das receitas">
-    </div>
-    <div id="recipe-details-box">
-    <h2>Ingredientes</h2>
-    <pre id="recipe-ingredients"></pre>
-    <h2>Modo de Preparo</h2>
-    <pre id="recipe-instructions"></pre>
-  </div>
-</div>
-  <footer>
-    <div class="background-footer">
-      <img src="../assets/brown-element-footer.png" class="bg-footer" alt="background do footer" />
-    </div>
-    <div class="footer-content">
-      <div class="footer-logo">
-        <img class="logo" src="../assets/logo.png" alt="logo" />
+    <div class="recipe-container">
+      <div id="recipe-sign-box">
+        <h3 id="recipe-sign">Receita</h3>
       </div>
-      <div class="footer-social">
-        <a href="https://www.facebook.com/" target="_blank">
-          <img src="../assets/facebook-icon.png" alt="icone facebook" />
-        </a>
-        <a href="https://www.instagram.com/" target="_blank">
-          <img src="../assets/instagram-icon.png" alt="icone instagram" />
-        </a>
-        <a href="https://x.com/home" target="_blank">
-          <img src="../assets/x-icon.png" alt="x icone" />
-        </a>
-        <a href="https://www.youtube.com/" target="_blank">
-          <img src="../assets/youtube-icon.png" alt="youtube icone" />
-        </a>
+      <div id="background-recipe-box">
+        <img
+          class="brown-element-recipe"
+          src="../assets/brown-element-recipe.png"
+          alt="elemento marrom de fundo das receitas"
+        />
       </div>
-      <div class="footer-credits">
-        <p>
-          Clique abaixo para ver as fontes da imagens e receitas usadas no site
-        </p>
-        <a href="../credits/credits.html">Clique Aqui</a>
+      <div id="recipe-details-box">
+        <h2>Ingredientes</h2>
+        <pre id="recipe-ingredients"></pre>
+        <h2>Modo de Preparo</h2>
+        <pre id="recipe-instructions"></pre>
       </div>
     </div>
-  </footer>
-  <script src="./recipes.js"></script>
-  <script src="./script-recipes.js"></script>
-</body>
+    <footer>
+      <div class="background-footer">
+        <img
+          src="../assets/brown-element-footer.png"
+          class="bg-footer"
+          alt="background do footer"
+        />
+      </div>
+      <div class="footer-content">
+        <div class="footer-logo">
+          <img class="logo" src="../assets/logo.png" alt="logo" />
+        </div>
+        <div class="footer-social">
+          <a href="https://www.facebook.com/" target="_blank">
+            <img src="../assets/facebook-icon.png" alt="icone facebook" />
+          </a>
+          <a href="https://www.instagram.com/" target="_blank">
+            <img src="../assets/instagram-icon.png" alt="icone instagram" />
+          </a>
+          <a href="https://x.com/home" target="_blank">
+            <img src="../assets/x-icon.png" alt="x icone" />
+          </a>
+          <a href="https://www.youtube.com/" target="_blank">
+            <img src="../assets/youtube-icon.png" alt="youtube icone" />
+          </a>
+        </div>
+        <div class="footer-credits">
+          <p>
+            Clique abaixo para ver as fontes da imagens e receitas usadas no
+            site
+          </p>
+          <a href="../credits/credits.html">Clique Aqui</a>
+        </div>
+      </div>
+    </footer>
+    <script src="recipes-details.js"></script>
+    <script src="script-recipe.js"></script>
+  </body>
 </html>
